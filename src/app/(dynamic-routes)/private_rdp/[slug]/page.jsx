@@ -173,7 +173,7 @@ const PrivateRDP = () => {
     console.log({ metaDescription });
 
     // Update or create the keywords meta tag
-    const metaKeywords = updateOrCreateMetaTag("keywords", rdplocation.keywords);
+    const metaKeywords = updateOrCreateMetaTag("keywords", rdplocation.keyword);
 
     // Cleanup function to remove the meta tags when the component unmounts
     return () => {
@@ -192,7 +192,7 @@ const PrivateRDP = () => {
         {/* Google Analytics Script */}
 
         {/* Meta description or keywords */}
-        <meta name="keywords" content={rdplocation.keywords} />
+        <meta name="keywords" content={rdplocation.keyword} />
         <title>{rdplocation.name}</title>
         <meta name="description" content={rdplocation.description} />
       </Head>

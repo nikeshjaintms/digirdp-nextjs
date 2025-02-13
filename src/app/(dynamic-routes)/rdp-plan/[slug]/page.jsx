@@ -182,7 +182,7 @@ const RDPPlan = () => {
     console.log({ metaDescription });
 
     // Update or create the keywords meta tag
-    const metaKeywords = updateOrCreateMetaTag("keywords", rdp.keywords);
+    const metaKeywords = updateOrCreateMetaTag("keywords", rdp.keyword);
 
     // Cleanup function to remove the meta tags when the component unmounts
     return () => {
@@ -202,7 +202,7 @@ const RDPPlan = () => {
         <title>{rdp.name}</title>
         <meta name="description" content={rdp.description} />
         {/* Meta description or keywords */}
-        <meta name="keywords" content={rdp.keywords} />
+        <meta name="keywords" content={rdp.keyword} />
       </Head>
       <Header />
 

@@ -179,7 +179,7 @@ const Cloudvps = () => {
       console.log({ metaDescription });
   
       // Update or create the keywords meta tag
-      const metaKeywords = updateOrCreateMetaTag("keywords", cloudvps.keywords);
+      const metaKeywords = updateOrCreateMetaTag("keywords", cloudvps.keyword);
   
       // Cleanup function to remove the meta tags when the component unmounts
       return () => {
@@ -199,7 +199,7 @@ const Cloudvps = () => {
         <title>{cloudvps && cloudvps.name}</title>
         <meta name="description" content={cloudvps.description} />
         {/* Meta description or keywords */}
-        <meta name="keywords" content={cloudvps.keywords} />
+        <meta name="keywords" content={cloudvps.keyword} />
       </Head>
       <Header />
 

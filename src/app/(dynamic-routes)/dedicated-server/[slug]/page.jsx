@@ -149,7 +149,7 @@ const DedicatedPlan = () => {
     console.log({ metaDescription });
 
     // Update or create the keywords meta tag
-    const metaKeywords = updateOrCreateMetaTag("keywords", dedicateds.keywords);
+    const metaKeywords = updateOrCreateMetaTag("keywords", dedicateds.keyword);
 
     // Cleanup function to remove the meta tags when the component unmounts
     return () => {
@@ -167,7 +167,7 @@ const DedicatedPlan = () => {
         {/* Google Analytics Script */}
 
         {/* Meta description or keywords */}
-        <meta name="keywords" content={dedicateds.keywords} />
+        <meta name="keywords" content={dedicateds.keyword} />
         <title>{dedicateds.name}</title>
         <meta name="description" content={dedicateds.description} />
       </Head>
