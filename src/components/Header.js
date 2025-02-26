@@ -482,17 +482,7 @@ const Header = () => {
         </Head>
 
         {/* <!-- Imroz Preloader --> */}
-        // {loading && (
-        //   <div className="preloader">
-        //     <div className="loader">
-        //       <div className="circle"></div>
-        //       <div className="circle"></div>
-        //       <div className="circle"></div>
-        //       <div className="circle"></div>
-        //       <div className="circle"></div>
-        //     </div>
-        //   </div>
-        // )}
+      
 
         {/* <!-- Start Header Top Area  --> */}
 
